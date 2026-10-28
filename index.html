@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cristina Sisul | Portfolio Profesional</title>
+<style>
+:root {
+  --navy: #142b45;
+  --blue: #2475b9;
+  --cyan: #55c5dc;
+  --light: #f3f7fb;
+  --text: #26384a;
+  --muted: #65788b;
+}
+* { box-sizing: border-box; scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--light);
+  color: var(--text);
+  line-height: 1.6;
+}
+header {
+  background: var(--navy);
+  color: white;
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.logo { font-size: 21px; font-weight: bold; }
+nav { display: flex; flex-wrap: wrap; gap: 18px; }
+nav a { color: white; text-decoration: none; font-size: 14px; }
+nav a:hover { color: var(--cyan); }
+.hero {
+  background: linear-gradient(130deg, #142b45, #205c88);
+  color: white;
+  padding: 95px 8%;
+}
+.hero h1 { font-size: clamp(36px, 6vw, 58px); margin: 10px 0; }
+.hero h2 { color: var(--cyan); font-size: 22px; font-weight: 500; }
+.hero p { max-width: 650px; color: #e0eaf3; font-size: 17px; }
+.tag {
+  display: inline-block;
+  background: rgba(85,197,220,.16);
+  border: 1px solid var(--cyan);
+  color: #a9edf7;
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 13px;
+}
+.btn {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 12px 22px;
+  border-radius: 7px;
+  background: var(--cyan);
+  color: var(--navy);
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn:hover { background: white; }
+section { padding: 65px 8%; }
+.section-title {
+  color: var(--navy);
+  font-size: 30px;
+  margin: 0 0 10px;
+}
+.subtitle { color: var(--muted); margin-bottom: 30px; }
+.about {
+  background: white;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 4px 18px rgba(20,43,69,.06);
+}
+.skills, .projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+.skill, .project {
+  background: white;
+  padding: 23px;
+  border-radius: 12px;
+  border: 1px solid #e3ebf2;
+  box-shadow: 0 4px 14px rgba(20,43,69,.04);
+}
+.skill h3, .project h3 { color: var(--blue); margin-top: 0; }
+.project p, .skill p { color: var(--muted); font-size: 14px; }
+.project .tech { color: var(--blue); font-size: 13px; font-weight: bold; }
+.timeline {
+  border-left: 3px solid var(--cyan);
+  padding-left: 22px;
+  margin: 25px 0;
+}
+.timeline article { margin-bottom: 28px; }
+.timeline h3 { margin-bottom: 3px; color: var(--navy); }
+.date { color: var(--blue); font-size: 14px; font-weight: bold; }
+.education-item { margin-bottom: 18px; }
+.contact {
+  background: var(--navy);
+  color: white;
+  text-align: center;
+}
+.contact h2 { color: white; }
+.contact p { color: #d7e4ef; }
+.contact a { color: var(--cyan); }
+footer {
+  background: #0d1d30;
+  color: #bdcad7;
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+}
+@media(max-width:600px) {
+  header { justify-content: center; }
+  nav { justify-content: center; }
+  .hero { padding: 65px 7%; }
+  section { padding: 48px 7%; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Cristina Sisul</div>
+  <nav>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#experiencia">Experiencia</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <span class="tag">PORTFOLIO PROFESIONAL</span>
+  <h1>Hola, soy Cristina Sisul</h1>
+  <h2>Analista Programadora | Data & BI Junior</h2>
+  <p>
+    Me interesa transformar datos en información útil y desarrollar
+    soluciones tecnológicas que ayuden a resolver problemas reales.
+    Combino programación, análisis de datos y pensamiento analítico.
+  </p>
+  <a class="btn" href="#proyectos">Conocé mis proyectos</a>
+</div>
+
+<section id="sobre-mi">
+  <h2 class="section-title">Sobre mí</h2>
+  <p class="subtitle">Mi perfil profesional</p>
+  <div class="about">
+    <p>
+      Soy Analista Programadora graduada de la Universidad Abierta
+      Interamericana (UAI), con formación complementaria en Ciencia
+      de Datos e Inteligencia Artificial.
+    </p>
+    <p>
+      Tengo conocimientos en C#/.NET, SQL Server, Power BI y Python.
+      Cuento con experiencia práctica en análisis y validación de datos,
+      consultas SQL, desarrollo de dashboards y seguimiento de indicadores
+      de gestión.
+    </p>
+    <p>
+      Me considero una persona analítica, organizada y comprometida,
+      con facilidad para aprender, trabajar en equipo y resolver problemas.
+      Mi experiencia en docencia y atención al cliente fortaleció mis
+      habilidades de comunicación y adaptación.
+    </p>
+  </div>
+</section>
+
+<section id="habilidades">
+  <h2 class="section-title">Habilidades técnicas</h2>
+  <p class="subtitle">Herramientas y tecnologías</p>
+  <div class="skills">
+    <div class="skill">
+      <h3>Programación</h3>
+      <p>C# · .NET · HTML5 · CSS3 · JavaScript</p>
+    </div>
+    <div class="skill">
+      <h3>Datos y consultas</h3>
+      <p>SQL Server · Modelado de datos · Data Cleaning · Python (en formación)</p>
+    </div>
+    <div class="skill">
+      <h3>Business Intelligence</h3>
+      <p>Power BI · Looker Studio · Dashboards · KPIs</p>
+    </div>
+    <div class="skill">
+      <h3>IA y herramientas</h3>
+      <p>IA Generativa · Prompt Engineering · Git · GitHub · Visual Studio</p>
+    </div>
+  </div>
+</section>
+
+<section id="proyectos">
+  <h2 class="section-title">Proyectos destacados</h2>
+  <p class="subtitle">Trabajos académicos y prácticos</p>
+  <div class="projects">
+    <div class="project">
+      <h3>Sistema de Gestión POS</h3>
+      <p>
+        Proyecto final de grado. Desarrollo de un sistema de gestión
+        con módulos de facturación, métricas de ventas y arquitectura
+        en capas.
+      </p>
+      <div class="tech">C# · .NET · Windows Forms</div>
+    </div>
+    <div class="project">
+      <h3>DuckDB-Clima</h3>
+      <p>
+        Proyecto de análisis y procesamiento de datos climáticos
+        de Buenos Aires, trabajando con datos horarios y formatos
+        orientados al análisis.
+      </p>
+      <div class="tech">Python · DuckDB · Pandas · CSV · Parquet</div>
+    </div>
+    <div class="project">
+      <h3>Churn Prediction</h3>
+      <p>
+        Proyecto de Machine Learning para analizar la cancelación
+        de clientes y evaluar el rendimiento de modelos predictivos.
+      </p>
+      <div class="tech">Python · Machine Learning · Random Forest</div>
+    </div>
+    <div class="project">
+      <h3>Online Retail</h3>
+      <p>
+        Proyecto de análisis de transacciones comerciales.
+        Enfoque en consultas SQL, limpieza de datos y análisis
+        de comportamiento de clientes.
+      </p>
+      <div class="tech">SQL · Análisis de datos · Online Retail</div>
+    </div>
+    <div class="project">
+      <h3>Growth Plan – Seip Sushi Nikkei</h3>
+      <p>
+        Análisis de negocio, indicadores de crecimiento, métricas
+        LTV/CAC y propuesta de experimentos para optimizar
+        la estrategia comercial.
+      </p>
+      <div class="tech">Looker Studio · GA4 · SQL · IA Generativa</div>
+    </div>
+  </div>
+</section>
+
+<section id="experiencia">
+  <h2 class="section-title">Experiencia</h2>
+  <p class="subtitle">Mi recorrido profesional</p>
+  <div class="timeline">
+    <article>
+      <span class="date">Marzo – Agosto 2026</span>
+      <h3>Pasantía en Análisis de Datos y Business Intelligence</h3>
+      <p>Consultas SQL, migración de reportes a Power BI, dashboards
+      de SLA y Cycle Time, validación de datos y detección de inconsistencias.</p>
+    </article>
+    <article>
+      <span class="date">2014 – 2021</span>
+      <h3>Profesora de Educación Física / Entrenadora</h3>
+      <p>Planificación de actividades, coordinación de grupos y
+      seguimiento de objetivos.</p>
+    </article>
+    <article>
+      <span class="date">2010 – 2013</span>
+      <h3>Atención al Cliente – Claro Argentina</h3>
+      <p>Atención y resolución de consultas, verificación de datos
+      y gestión de solicitudes de clientes.</p>
+    </article>
+  </div>
+</section>
+
+<section id="formacion">
+  <h2 class="section-title">Formación académica</h2>
+  <p class="subtitle">Educación y capacitación</p>
+  <div class="about">
+    <div class="education-item">
+      <strong>Analista Programador</strong><br>
+      Universidad Abierta Interamericana (UAI) · 2021–2025
+    </div>
+    <div class="education-item">
+      <strong>Ciencia de Datos</strong><br>
+      Coderhouse · En curso, 2026
+    </div>
+    <div class="education-item">
+      <strong>Marketing Digital y Ciencia de Datos</strong><br>
+      Coderhouse · 2025–2026
+    </div>
+    <div class="education-item">
+      <strong>Inteligencia Artificial Generativa</strong><br>
+      Coderhouse · 2025
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="contact">
+  <h2>¿Trabajamos juntos?</h2>
+  <p>Estoy abierta a nuevas oportunidades y desafíos profesionales.</p>
+  <p>
+    <a href="mailto:cristinalaboral@gmail.com">cristinalaboral@gmail.com</a>
+  </p>
+  <p>
+    <a href="https://github.com/cristinalaboral-sis" target="_blank">
+      Mi GitHub
+    </a>
+  </p>
+</section>
+
+<footer>
+  © 2026 Cristina Sisul · Portfolio Profesional
+</footer>
+
+</body>
+</html>
